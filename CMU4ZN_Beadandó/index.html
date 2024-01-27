@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Fuvarozó Cég</title>
+</head>
+<body>
+    <header>
+        <h1>Fuvarozó Cég</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="services.html">Szolgáltatások</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+		<li><a href="about.html">Rólunk</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="content">
+        <div class="main-content">
+            <h2>Üdvözöljük!</h2>
+            <img src="images/trucks.jpg" alt="Kamionok">
+        </div>
+        
+        <div class="form-container">
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Feliratkozom</label>
+                
+                <input type="radio" id="urgent" name="priority" value="urgent">
+                <label for="urgent">Sürgős</label>
+                
+                <input type="radio" id="normal" name="priority" value="normal" checked>
+                <label for="normal">Normál</label>
+                
+                <label for="color">Kedvenc szín:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                
+                <label for="birthdate">Születésnap:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Fuvarozó Cég. Minden jog fenntartva.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
